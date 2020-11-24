@@ -1,0 +1,12 @@
+.button {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font: 500 14px Roboto, sans-serif;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 1.25px;
+  height: 36px;
+  padding: 0 16px 0 16px;
+}
