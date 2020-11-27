@@ -1,0 +1,17 @@
+.input {
+    display: flex;
+    box-sizing: content-box;
+    border-radius: 4px;
+    font: 400 16px Roboto, sans-serif;
+    height: 30px;
+    border-image-width: 1px;
+    padding: 12px 16px 14px 16px;
+    max-width: 182px;
+    caret-color: #6200ee;
+    border-color: lightgray;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+
