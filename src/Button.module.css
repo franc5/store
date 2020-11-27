@@ -8,5 +8,13 @@
   border: none;
   letter-spacing: 1.25px;
   height: 36px;
-  padding: 0 16px 0 16px;
+  padding: 0 16px;
+}
+
+.red {
+  background-color: #e53935
+}
+
+.blue {
+  background-color: #6200ee
 }

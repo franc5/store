@@ -6,10 +6,8 @@ export default function Home() {
     <div className={styles.placeholderContainer}>
       Placeholder App 
     </div>,
-    <Button 
-      onClick={e => console.log(e)}
-      label="Button"
-      color="#6200ee"
-    />
+    <Button color="red" onClick={e => console.log(e)}>
+      Button
+    </Button>
   );
 }
