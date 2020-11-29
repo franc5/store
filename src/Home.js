@@ -12,8 +12,8 @@ export default function Home() {
         Button
       </Button>
       <Input
-      placeholder="Label"
-      onChange={value => console.log(value)}
+        placeholder="Label"
+        onChange={value => console.log(value)}
       />
     </>
   );
