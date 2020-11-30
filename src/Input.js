@@ -9,12 +9,12 @@ export default function Input({placeholder, onChange}) {
   }
 
   function onEnter(e) {
-    const EnterKeyPressed = e.charCode === 13;
     const value = e.target.value;
-    EnterKeyPressed && onChange(value);
+    if (e.charCode !== 13 || value === '') return;
+      onChangeHandler(e);
   }
 
   return (
-    <input className={styles.input} placeholder={placeholder} onChange={onChangeHandler} onKeyPress={onEnter}></input>
+    <input className={styles.input} placeholder={placeholder} onChange={onChangeHandler} onKeyPress={onEnter} />
   );
 }
