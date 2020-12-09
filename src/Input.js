@@ -8,13 +8,12 @@ export default function Input({placeholder, onChange}) {
     onChange(value);
   }
 
-  function onEnter(e) {
-    const value = e.target.value;
-    if (e.charCode !== 13 || value === '') return;
+  function onKeyPressHandler(e) {
+    if (e.charCode !== 13) return;
       onChangeHandler(e);
   }
 
   return (
-    <input className={styles.input} placeholder={placeholder} onChange={onChangeHandler} onKeyPress={onEnter} />
+    <input className={styles.input} placeholder={placeholder} onChange={onChangeHandler} onKeyPress={onKeyPressHandler} />
   );
 }
