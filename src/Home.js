@@ -1,7 +1,7 @@
 import styles from './Home.module.css';
 import Input from './Input' ;
-import Button from './Button';
 import Select from './components/Select';
+import Button from './components/Button';
 
 export default function Home() {
 
