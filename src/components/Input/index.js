@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Input.module.css';
+import styles from './index.module.css';
 import PropTypes from 'prop-types';
 
 function Input({placeholder, onChange}) {
