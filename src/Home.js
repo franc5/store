@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import Input from './Input' ;
+import Input from './components/Input' ;
 import Select from './components/Select';
 import Button from './components/Button';
 
