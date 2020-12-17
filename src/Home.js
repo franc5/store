@@ -5,7 +5,7 @@ import Select from './components/Select';
 
 export default function Home() {
 
-  const Options = [
+  const options = [
     {id: "option1", name: "Option 1"},
     {id: "option2", name: "Option 2"},
     {id: "option3", name: "Option 3"},
@@ -25,9 +25,9 @@ export default function Home() {
       />
       <Select 
         label= "Select your option:  "
-        options = {Options}
+        options = {options}
         onChange={(id, name) => console.log("Id:" + id,"Name:" + name)}
-        defaultValue={Options[2].name}
+        defaultValue={options[2].name}
       />
     </>
   );
