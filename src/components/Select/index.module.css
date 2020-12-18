@@ -9,11 +9,11 @@
   padding: 12px 16px 14px;
 }
 
-.Select:hover{
+.select:hover{
   box-shadow: 0 0 0 1pt rgba(0,0,0,.87);
 }
 
-.Select:focus{
+.select:focus{
   box-shadow: 0 0 0 1pt #6200ee;
 }
 

@@ -7,7 +7,7 @@ function Select({label, options, onChange, defaultValue}) {
 
   function onChangeHandler(e) {
     const {value: selectedOptionIdx} = e.target;
-    const {id, name} = options[selectedOptionIdx]
+    const {id, name} = options[selectedOptionIdx];
     onChange(id, name);
   }
 
@@ -24,9 +24,11 @@ function Select({label, options, onChange, defaultValue}) {
 Select.propTypes = {
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  options: PropTypes.array.isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  })).isRequired,
   defaultValue: PropTypes.string.isRequired,
 };
 
 export default Select
-
