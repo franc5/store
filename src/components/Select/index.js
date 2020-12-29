@@ -28,7 +28,7 @@ Select.propTypes = {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   })).isRequired,
-  defaultValue: PropTypes.string.isRequired,
+  defaultValue: PropTypes.number,
 };
 
 export default Select

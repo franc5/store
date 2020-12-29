@@ -27,7 +27,7 @@ export default function Home() {
         label= "Select your option:  "
         options = {options}
         onChange={(id, name) => console.log("Id:" + id,"Name:" + name)}
-        defaultValue={options[2].name}
+        defaultValue={2}
       />
     </>
   );
