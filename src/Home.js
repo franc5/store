@@ -2,6 +2,7 @@ import styles from './Home.module.css';
 import Input from './components/Input' ;
 import Select from './components/Select';
 import Button from './components/Button';
+import Checkbox from './components/Checkbox';
 
 export default function Home() {
 
@@ -28,6 +29,11 @@ export default function Home() {
         options = {options}
         onChange={(id, name) => console.log("Id:" + id,"Name:" + name)}
         defaultValue={2}
+      />
+      <Checkbox
+        label="Label"
+        checked={false} //If needed set the defaultChecked attribute true, by default is false.
+        onChange={checked => console.log(checked)}
       />
     </>
   );
