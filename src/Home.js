@@ -32,7 +32,6 @@ export default function Home() {
       />
       <Checkbox
         label="Label"
-        checked={false} //If needed set the defaultChecked attribute true, by default is false.
         onChange={checked => console.log(checked)}
       />
     </>

@@ -3,7 +3,7 @@ import styles from './index.module.css';
 import PropTypes from 'prop-types';
 
 
-function Checkbox({label, checked, onChange}) {
+function Checkbox({label, initialValue = false, onChange}) {  //initialValue is an optional prop, set to true to check the box.
 
   function onChangeHandler(e) {
     const {checked} = e.target;
@@ -12,7 +12,7 @@ function Checkbox({label, checked, onChange}) {
 
   return (
     <label>
-      <input className={styles.checkBox} onChange={onChangeHandler} defaultChecked={checked} type="checkbox"/> 
+      <input className={styles.checkBox} onChange={onChangeHandler} defaultChecked={initialValue} type="checkbox"/> 
       {label}
     </label>
   );
@@ -22,7 +22,7 @@ function Checkbox({label, checked, onChange}) {
 Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  checked: PropTypes.bool.isRequired,
+  initialValue: PropTypes.bool,
 };
 
 export default Checkbox
