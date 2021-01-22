@@ -10,7 +10,7 @@
   vertical-align: middle;
 } 
 
-label {
+.checkBoxLabel {
   line-height: 20px;
   font: 400 14px Roboto, sans-serif;
 }
