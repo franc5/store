@@ -11,7 +11,7 @@ function Checkbox({label, initialValue = false, onChange}) {  //initialValue is 
   }
 
   return (
-    <label>
+    <label className={styles.checkBoxLabel}>
       <input className={styles.checkBox} onChange={onChangeHandler} defaultChecked={initialValue} type="checkbox"/> 
       {label}
     </label>
