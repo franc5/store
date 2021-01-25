@@ -2,8 +2,13 @@ import React from 'react';
 import styles from './index.module.css';
 import PropTypes from 'prop-types';
 
+const options = [
+  {id: "option1", name: "Option 1"},
+  {id: "option2", name: "Option 2"},
+  {id: "option3", name: "Option 3"},
+];
 
-function Select({label, options, onChange, defaultValue}) {
+function Select({label, onChange, defaultValue}) {
 
   function onChangeHandler(e) {
     const {value: selectedOptionIdx} = e.target;
