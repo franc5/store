@@ -1,6 +1,4 @@
 .itemListContainer {
-  box-sizing: content-box;
-  margin: 0;
   padding: 10px;
   border: 1px solid;
   width: 220px;
@@ -39,6 +37,4 @@
   text-transform: uppercase;
   font: 700 15px Roboto, sans-serif;
   color: rgb(46, 42, 42);
-
-
 }

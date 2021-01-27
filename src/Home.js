@@ -38,7 +38,7 @@ export default function Home() {
       <ItemList
         image= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0cc7p67e4tYtHqttNxaCbNB271tfgkHzlw&usqp=CAU"
         title= "Smart TV edge NTV43HD LED Full HD 43"
-        price= "US$4500.00"
+        price={4500.00}
       />
     </>
   );
