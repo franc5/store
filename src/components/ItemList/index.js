@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.css';
 import PropTypes from 'prop-types';
 
-function ItemList ({image, title, currency, price}) {
+function ItemList ({image, title, price}) {
 
   return (
     <div className={styles.itemListContainer}>
