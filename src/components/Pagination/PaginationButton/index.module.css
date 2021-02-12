@@ -1,0 +1,31 @@
+.PaginationButton{
+  list-style-type: none;
+  display: inline;
+}
+.PaginationButton a{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(160,160,255);
+  background-color: white;
+  color: rgb(70, 84, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  font: 400 14px Roboto, sans-serif ;
+  text-decoration: none;
+}
+
+.PaginationButton a:hover{
+  background: rgb(191, 161, 161);
+  color: #fefefe;
+  transition: .3s ease-in;
+}
+
+.PaginationButton a:focus{
+  background: rgb(104, 116, 211);
+  color: white;
+}
+
