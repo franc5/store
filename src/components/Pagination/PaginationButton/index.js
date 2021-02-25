@@ -5,13 +5,14 @@ import PropTypes from 'prop-types';
 function PaginationButton ({ onClick, children, activePage}) { 
 
   function onPageSelected(e) {
+    e.preventDefault();
     e.stopPropagation();
     onClick(children);
   }
 
   return (
-    <li className={styles.PaginationButton}>
-      <a onClick={onPageSelected} href='#' target='_blank'> {/* target attribute is added to make visible the styles of a:focus */}
+    <li className={styles.paginationButton}>
+      <a onClick={onPageSelected} href='#'>
         { (activePage) ? <b>{children}</b>: children }
       </a>
     </li>
@@ -22,6 +23,7 @@ function PaginationButton ({ onClick, children, activePage}) {
 PaginationButton.propTypes = {
   children: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired,
+  activePage: PropTypes.bool,
 };
 
 export default PaginationButton
