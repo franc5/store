@@ -1,8 +1,8 @@
-.PaginationButton{
+.paginationButton{
   list-style-type: none;
   display: inline;
 }
-.PaginationButton a{
+.paginationButton a{
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -18,14 +18,14 @@
   text-decoration: none;
 }
 
-.PaginationButton a:hover{
+.paginationButton a:hover{
   background: rgb(191, 161, 161);
   color: #fefefe;
   transition: .3s ease-in;
 }
 
-.PaginationButton a:focus{
-  background: rgb(104, 116, 211);
+
+.paginationButton a:focus{
+  background-color: rgb(104, 116, 211);
   color: white;
 }
-
