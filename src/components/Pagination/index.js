@@ -14,10 +14,11 @@ function Pagination ({totalPages, selectedPage = 1, onPageSelected}) {  //select
         <PaginationButton 
           onClick={pageNumber => {
             if(pageNumber === currentPage) return;
-              setCurrentPage(pageNumber); 
-              onPageSelected(pageNumber)}} 
+            setCurrentPage(pageNumber); 
+            onPageSelected(pageNumber)}} 
           activePage={currentPage === idx +1}
-          key={idx}>
+          key={idx}
+        >
             {idx+1}
         </PaginationButton>
       )}
