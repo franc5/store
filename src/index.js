@@ -9,7 +9,6 @@ ReactDOM.render(
     <div>
       Placeholder App
     </div>
-  < MockApi />
   </>,
   document.getElementById('root')
 );
