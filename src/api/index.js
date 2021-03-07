@@ -5,7 +5,7 @@ const items = [
     price: 176900
   },
   {
-    img: 'https://www.cstatic-images.com/car-pictures/main/usd10chs082d021001.png',
+    image: 'https://www.cstatic-images.com/car-pictures/main/usd10chs082d021001.png',
     title: '2021 Chevrolet TrailBlazer',
     price: 19000
   },
