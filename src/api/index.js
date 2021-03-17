@@ -24,11 +24,11 @@ const items = [
     title: '2021 Jaguar E-PACE',
     price: 40995
   },
-  
 ];
 
 function getItems() {
   return items;
 }
 
-getItems();
+const itemsReturned = getItems();
+export {itemsReturned};

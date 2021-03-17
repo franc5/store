@@ -4,6 +4,8 @@
   width: 220px;
   height: 350px;
   border-radius: 4px;
+  background: rgb(125,69,157);
+  background: linear-gradient(203deg, rgba(125,69,157,0.9920343137254902) 0%, rgba(168,248,250,0.8463760504201681) 42%);
 }
 
 .imageContainer {

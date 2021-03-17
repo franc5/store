@@ -1,5 +1,25 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(63,94,251);
+  background: linear-gradient(22deg, rgba(63,94,251,1) 0%, rgba(252,70,107,0.61) 100%);
+}
+    
 .home{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: inline-flex;
+  width: 90%;
+  height: 90%;
+  flex-wrap: wrap;
+  padding-inline-start: 0px;
+  margin-inline-start: 4.5%;
+  justify-content: space-between;
+  align-content: space-around;
+  list-style: none;   
+  background: rgb(41,67,161);
+  background: radial-gradient(circle, rgba(41,67,161,0.8995973389355743) 0%, rgba(157,69,125,1) 100%);
+  border-radius: 8px;
+}
+
+.home li{
+  padding: 20px;
 }
