@@ -1,23 +1,23 @@
 import React from 'react';
 import styles from './index.module.css';
-import ItemList from './ItemList';
+import ItemList from '../ItemList';
+import {itemsReturned} from '../../api';
 
 function Home() {
-  
 
   return (
-    <li className={styles.home}>
-      {items.map( (value, idx) =>
+    <ul className={styles.home}>
+      {itemsReturned.map((value, idx) => 
+        <li key={idx}>
         <ItemList 
+          image={value.image}
           title={value.title}
-          img={value.img}
           price={value.price}
-          key={idx}
         />
+        </li>
       )}
-    </li>
+    </ul>
   )
-
 };
 
 export default Home
