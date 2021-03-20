@@ -26,9 +26,6 @@ const items = [
   },
 ];
 
-function getItems() {
+export default function getItems() {
   return items;
 }
-
-const itemsReturned = getItems();
-export {itemsReturned};
