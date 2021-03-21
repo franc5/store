@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './index.module.css';
 import ItemList from '../ItemList';
-import {itemsReturned} from '../../api';
+import getItems from '../../api';
 
 function Home() {
 
   return (
     <ul className={styles.home}>
-      {itemsReturned.map((value, idx) => 
+      {getItems().map((value, idx) => 
         <li key={idx}>
         <ItemList 
           image={value.image}
