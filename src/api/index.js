@@ -27,5 +27,7 @@ const items = [
 ];
 
 export default function getItems() {
-  return items;
+  return new Promise((resolve) =>
+    resolve(items)
+  );
 }
