@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
 import PropTypes from 'prop-types';
-import PaginationButton from './PaginationButton'
+import PaginationButton from './PaginationButton';
 
 function Pagination ({totalPages, selectedPage = 1, onPageSelected}) {  //selectedPage is an optional prop with default value = 1.
 
-  const paginationArray = new Array(totalPages)
+  const paginationArray = new Array(totalPages);
   const [currentPage, setCurrentPage] = useState(selectedPage);
 
   return (
@@ -15,11 +15,11 @@ function Pagination ({totalPages, selectedPage = 1, onPageSelected}) {  //select
           onClick={pageNumber => {
             if(pageNumber === currentPage) return;
             setCurrentPage(pageNumber); 
-            onPageSelected(pageNumber)}} 
+            onPageSelected(pageNumber);}} 
           activePage={currentPage === idx +1}
           key={idx}
         >
-            {idx+1}
+          {idx+1}
         </PaginationButton>
       )}
     </ul>
@@ -33,4 +33,4 @@ Pagination.propTypes = {
   onPageSelected: PropTypes.func.isRequired
 };
 
-export default Pagination
+export default Pagination;

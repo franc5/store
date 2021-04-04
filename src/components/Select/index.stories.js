@@ -6,7 +6,7 @@ export default {
   component: Select,
 };
 
-const Template = args => <Select {...args} />
+const Template = args => <Select {...args} />;
 
 export const Default = Template.bind({});
 

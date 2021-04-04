@@ -9,15 +9,15 @@ function Home() {
     <ul className={styles.home}>
       {getItems().map((value, idx) => 
         <li key={idx}>
-        <ItemList 
-          image={value.image}
-          title={value.title}
-          price={value.price}
-        />
+          <ItemList 
+            image={value.image}
+            title={value.title}
+            price={value.price}
+          />
         </li>
       )}
     </ul>
-  )
-};
+  );
+}
 
-export default Home
+export default Home;

@@ -22,4 +22,4 @@ ItemList.propTypes = {
   price: PropTypes.number.isRequired,
 };
 
-export default ItemList
+export default ItemList;
