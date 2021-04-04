@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.css';
 import PropTypes from 'prop-types';
 
-function PaginationButton ({ onClick, children, activePage}) { 
+function PaginationButton ({ onClick, children, activePage}) {
 
   function onPageSelected(e) {
     e.preventDefault();
