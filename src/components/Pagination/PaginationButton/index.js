@@ -26,4 +26,4 @@ PaginationButton.propTypes = {
   activePage: PropTypes.bool,
 };
 
-export default PaginationButton
+export default PaginationButton;

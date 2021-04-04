@@ -25,4 +25,4 @@ Checkbox.propTypes = {
   initialValue: PropTypes.bool,
 };
 
-export default Checkbox
+export default Checkbox;

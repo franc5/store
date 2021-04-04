@@ -11,7 +11,7 @@ function Input({placeholder, onChange}) {
 
   function onKeyPressHandler(e) {
     if (e.charCode !== 13) return;
-      onChangeHandler(e);
+    onChangeHandler(e);
   }
 
   return (
@@ -25,4 +25,4 @@ Input.propTypes = {
   onChange: PropTypes.func.isRequired,
 };
 
-export default Input
+export default Input;

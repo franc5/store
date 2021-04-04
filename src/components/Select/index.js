@@ -30,4 +30,4 @@ Select.propTypes = {
   defaultValue: PropTypes.number,
 };
 
-export default Select
+export default Select;

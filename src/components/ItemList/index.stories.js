@@ -6,7 +6,7 @@ export default {
   component: ItemList,
 };
 
-const Template = args => <ItemList {...args} />
+const Template = args => <ItemList {...args} />;
 
 export const Default = Template.bind({});
 
