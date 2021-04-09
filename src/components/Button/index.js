@@ -20,4 +20,4 @@ Button.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-export default Button
+export default Button;

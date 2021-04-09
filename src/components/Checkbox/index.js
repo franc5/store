@@ -12,7 +12,7 @@ function Checkbox({label, initialValue = false, onChange}) {  //initialValue is 
 
   return (
     <label className={styles.checkBoxLabel}>
-      <input className={styles.checkBox} onChange={onChangeHandler} defaultChecked={initialValue} type="checkbox"/> 
+      <input className={styles.checkBox} onChange={onChangeHandler} defaultChecked={initialValue} type="checkbox"/>
       {label}
     </label>
   );
@@ -25,4 +25,4 @@ Checkbox.propTypes = {
   initialValue: PropTypes.bool,
 };
 
-export default Checkbox
+export default Checkbox;

@@ -5,7 +5,7 @@
   ],
   "rules": {
     "indent": ["error", 2],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "no-trailing-spaces": ["error", {"skipBlankLines": true, "ignoreComments": true}]
   }
 }
-

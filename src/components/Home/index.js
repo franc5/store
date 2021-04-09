@@ -14,9 +14,9 @@ function Home() {
   
   return (
     <ul className={styles.home}>
-      {items.map((value, idx) => 
+      {items.map((value, idx) =>
         <li key={idx}>
-          <ItemList 
+          <ItemList
             image={value.image}
             title={value.title}
             price={value.price}
